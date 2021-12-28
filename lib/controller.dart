@@ -39,3 +39,22 @@ class Controller extends GetxController {
     );
   }
 }
+
+// var nullable: String? = "nullable"
+// var nonNullable: String = "non-Nullable"
+
+//안전하게 nullable 프로퍼티 접근하기
+
+//1) 조건문으로 nullable 접근
+// val b: String? = "Kotlin"
+// if (b != null && b.length > 0) {
+// print("String of length ${b.length}")
+// } else {
+// print("Empty string")
+// }
+
+// 2) Safe call 연산자로 nullable 접근
+// val a: String = "Kotlin"
+// val b: String? = null
+// println(b?.length)
+// println(a?.length) // Unnecessary safe call
